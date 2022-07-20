@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*
 
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
 
-body{
-    background: lightblue;
+body {
+    background: rgb(166, 148, 255);
     display: flex;
     justify-content: center;
     min-height: 100vh;
 }
 
-.container{
+.container {
     position: relative;
     width: 100%;
     max-width: 1000px;
@@ -24,25 +23,26 @@ body{
     display: grid;
     margin: 50px;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0,0,0,0.2);
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
 }
 
-.container .left_side{
+/*------------------------ Left Side ------------------------*/
+.container .left_side {
     position: relative;
     background: #1A164A;
     padding: 40px;
 }
 
-.profile_text{
+.profile_text {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.profile_text .photo{
+.profile_text .photo {
     position: relative;
     width: 200px;
     height: 200px;
@@ -50,7 +50,7 @@ body{
     overflow: hidden;
 }
 
-.profile_text h2{
+.profile_text h2 {
     color: white;
     font-size: 25px;
     margin-top: 20px;
@@ -60,16 +60,16 @@ body{
     line-height: 20px;
 }
 
-.profile_text h2 span{
+.profile_text h2 span {
     font-size: 18px;
     font-weight: 300;
 }
 
-.profile_text span{
+.profile_text span {
     line-height: 40px;
 }
 
-.profile_text .photo img{
+.profile_text .photo img {
     position: absolute;
     top: 0;
     left: 0;
@@ -78,7 +78,7 @@ body{
     object-fit: cover;
 }
 
-.title{
+.title {
     color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -86,66 +86,165 @@ body{
     margin-top: 40px;
     margin-bottom: 20px;
 }
+
 /*------------------------ contact ------------------------*/
-.contact_info,ul{
+.contact_info,
+ul {
     position: relative;
     list-style-type: none;
 }
 
-.contact_info,ul,li{
+.contact_info,
+ul,
+li {
     position: relative;
     margin: 10px 0;
     cursor: pointer;
 }
 
-.contact_info,ul,li,span{
+.contact_info,
+ul,
+li,
+span {
     color: white;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
 }
 
-.icon{
+.icon {
     display: inline-block;
     width: 30px;
     font-size: 18px;
     color: blueviolet;
 }
+
+.text a {
+    color: white;
+    text-decoration: none;
+}
+
+.text a:hover {
+    background-color: #3d1670;
+}
+
 /*------------------------ education ------------------------*/
-.education li{
+.education li {
     margin-bottom: 15px;
 }
 
-.education h5{
+.education h5 {
     color: blueviolet;
     font-weight: 500;
 }
 
-.education h4:nth-child(2){
+.education h4:nth-child(2) {
     color: white;
     font-weight: 500;
 }
 
-.education h4{
+.education h4 {
     color: white;
     font-weight: 300;
 }
+
 /*------------------------ language ------------------------*/
-.language li{
+.language li {
     margin-bottom: 15px;
 }
 
-.language h4:nth-child(2){
+.language h4:nth-child(2) {
     color: blueviolet;
     font-weight: 500;
 }
 
-.language h4{
+.language h4 {
     color: white;
     font-weight: 300;
 }
 
-.container .right_side{
+/*------------------------ Right Side ------------------------*/
+.container .right_side {
     position: relative;
     background: white;
     padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.title1 {
+    color: #1A164A;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.title1,
+p {
+    color: #1A164A;
+    text-align: left;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    color: #450780;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(216, 216, 216);
+}
+
+.percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.years_company {
+    min-width: 170px;
+}
+
+.years_company h5 {
+    text-transform: uppercase;
+    color: rgb(102, 71, 100);
+    font-weight: 600;
+}
+
+.text h4 {
+    text-transform: uppercase;
+    color: #450780;
+    font-size: 15px;
+}
+
+.others ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.others ul li{
+    color: #450780;
+    text-align: center;
+    list-style-type: disc;
 }
