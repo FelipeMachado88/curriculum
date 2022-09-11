@@ -246,5 +246,6 @@ p {
 .others ul li{
     color: #450780;
     text-align: center;
+    margin: 10px 0;
     list-style-type: disc;
 }
