@@ -1,4 +1,4 @@
-# LinkBio
+# Responsive Curriculum
 
 This project was generated with HTML5 and CSS3.
 Project developed as a study method and also to expose an online curriculum.
